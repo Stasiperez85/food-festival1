@@ -3,6 +3,11 @@ const webpack = require("webpack");
 const path = require('path');
 
 module.exports = {
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "/"),
+        },
+    },
     entry: {
         app: "./assets/js/script.js",
         events: "./assets/js/events.js",
